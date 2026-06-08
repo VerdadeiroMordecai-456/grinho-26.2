@@ -1,0 +1,89 @@
+/* style.css */
+:root {
+    --primary: #166534;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.dark nav {
+    background: #18181b;
+    border-color: #27272a;
+}
+
+/* Botões */
+.btn {
+    background-color: #166534;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #14532d;
+    transform: translateY(-2px);
+}
+
+/* Cards */
+.card {
+    background: white;
+    border-radius: 24px;
+    padding: 28px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.05);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+}
+
+.dark .card {
+    background: #27272a;
+}
+
+/* Seções */
+section {
+    padding: 80px 0;
+}
+
+/* Formulário */
+input, textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 1px solid #d1d5db;
+    border-radius: 16px;
+    margin-top: 6px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #166534;
+}
+
+/* Animações */
+.stat-number {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+    }
+}
