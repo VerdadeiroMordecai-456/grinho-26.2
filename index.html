@@ -6,18 +6,19 @@
     <title>AgroSustentável • Início</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="bg-zinc-50">
     <!-- Navbar -->
-    <nav class="bg-white border-b">
-        <div class="max-w-screen-xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-x-2">
-                <div class="w-9 h-9 bg-emerald-700 rounded-2xl flex items-center justify-center">
+    <nav class="bg-white border-b sticky top-0 z-50">
+        <div class="max-w-screen-xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-x-3">
+                <div class="w-10 h-10 bg-emerald-700 rounded-2xl flex items-center justify-center">
                     <i class="fa-solid fa-leaf text-white"></i>
                 </div>
-                <span class="font-bold text-2xl">AgroSustentável</span>
+                <span class="font-bold text-3xl">AgroSustentável</span>
             </div>
-            <ul class="flex gap-x-8 text-sm font-medium">
+            <ul class="hidden md:flex gap-x-8 text-sm font-medium">
                 <li><a href="index.html" class="text-emerald-700 font-semibold">Início</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="tecnologias.html">Tecnologias</a></li>
@@ -28,16 +29,51 @@
     </nav>
 
     <!-- Hero -->
-    <header class="min-h-[90vh] flex items-center bg-[url('https://picsum.photos/id/1018/2000/1200')] bg-cover bg-center relative">
-        <div class="absolute inset-0 bg-black/50"></div>
+    <header class="min-h-[90vh] flex items-center bg-cover bg-center" style="background-image: url('https://picsum.photos/id/1018/2000/1200')">
+        <div class="absolute inset-0 bg-black/55"></div>
         <div class="max-w-screen-xl mx-auto px-6 relative z-10 text-white">
-            <h1 class="text-6xl font-bold max-w-xl leading-tight">O futuro da agricultura é sustentável.</h1>
-            <p class="mt-4 text-xl max-w-md">Inovação, tecnologia e respeito ao meio ambiente.</p>
-            <div class="mt-8">
-                <a href="sobre.html" class="px-8 py-4 bg-emerald-600 hover:bg-emerald-700 rounded-3xl font-semibold inline-block">Conheça o projeto</a>
+            <h1 class="text-6xl md:text-7xl font-bold max-w-3xl leading-tight">Agricultura sustentável:<br> o caminho para o futuro.</h1>
+            <p class="mt-6 text-xl max-w-lg">Transformando o agronegócio brasileiro com tecnologia, ciência e responsabilidade ambiental.</p>
+            <div class="mt-8 flex gap-4">
+                <a href="sobre.html" class="btn">Conheça o projeto</a>
+                <a href="impacto.html" class="px-8 py-4 border border-white/70 rounded-3xl font-medium hover:bg-white/10">Ver impacto real</a>
             </div>
         </div>
     </header>
+
+    <!-- Estatísticas Reais -->
+    <section class="max-w-screen-xl mx-auto px-6 py-20">
+        <h2 class="text-center text-3xl font-bold mb-12">Dados Reais do Setor</h2>
+        <div class="grid md:grid-cols-4 gap-6">
+            <div class="bg-white p-8 rounded-3xl border">
+                <div class="text-emerald-700 text-sm">DESMATAMENTO AMAZÔNIA LEGAL (2024)</div>
+                <div class="text-5xl font-bold mt-1">5.033 km²</div>
+                <div class="text-sm text-zinc-500">Redução de 24% em relação a 2023 (INPE)</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border">
+                <div class="text-emerald-700 text-sm">ÁREAS RESTAURADAS (2024)</div>
+                <div class="text-5xl font-bold mt-1">2,8 mi ha</div>
+                <div class="text-sm text-zinc-500">Programa Nacional de Restauração</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border">
+                <div class="text-emerald-700 text-sm">REDUÇÃO DE EMISSÕES</div>
+                <div class="text-5xl font-bold mt-1">18,4 MtCO₂e</div>
+                <div class="text-sm text-zinc-500">Setor agropecuário (SEEG 2024)</div>
+            </div>
+            <div class="bg-white p-8 rounded-3xl border">
+                <div class="text-emerald-700 text-sm">USO DE IRRIGAÇÃO INTELIGENTE</div>
+                <div class="text-5xl font-bold mt-1">41%</div>
+                <div class="text-sm text-zinc-500">Economia média de água (Embrapa)</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navegação -->
+    <div class="max-w-screen-xl mx-auto px-6 pb-16 flex justify-end">
+        <a href="sobre.html" class="flex items-center gap-x-2 text-emerald-700 font-semibold hover:underline">
+            Próxima: Sobre o Projeto <i class="fa-solid fa-arrow-right ml-2"></i>
+        </a>
+    </div>
 
     <script src="script.js"></script>
 </body>

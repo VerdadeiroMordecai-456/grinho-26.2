@@ -2,31 +2,45 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title>Impacto • AgroSustentável</title>
+    <title>Nosso Impacto • AgroSustentável</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <nav>...</nav>
+    <nav class="bg-white border-b">...</nav>
 
     <main class="max-w-screen-xl mx-auto px-6 py-16">
-        <h1 class="text-4xl font-bold mb-10">Nosso Impacto</h1>
+        <h1 class="text-4xl font-bold mb-3">Nosso Impacto Real</h1>
+        <p class="text-zinc-600">Dados atualizados em janeiro de 2025</p>
 
         <!-- Contadores -->
-        <div class="grid md:grid-cols-3 gap-6">
-            <div class="bg-white p-8 rounded-3xl">
-                <div id="trees" class="text-5xl font-bold">142890</div>
-                <p>Árvores preservadas</p>
+        <div class="grid md:grid-cols-3 gap-6 mt-10">
+            <div class="card text-center">
+                <div id="trees" class="stat-number text-6xl font-bold text-emerald-700" data-target="284000">0</div>
+                <p class="mt-2 text-sm">Hectares restaurados</p>
             </div>
-            <!-- mais 2 contadores -->
+            <div class="card text-center">
+                <div id="water" class="stat-number text-6xl font-bold text-emerald-700" data-target="124000000">0</div>
+                <p class="mt-2 text-sm">Litros de água economizados</p>
+            </div>
+            <div class="card text-center">
+                <div id="co2" class="stat-number text-6xl font-bold text-emerald-700" data-target="18400000">0</div>
+                <p class="mt-2 text-sm">Toneladas de CO₂ evitadas</p>
+            </div>
         </div>
 
         <!-- Gráfico -->
-        <div class="mt-12">
-            <canvas id="sustainabilityChart"></canvas>
+        <div class="mt-16">
+            <h3 class="font-semibold mb-4">Evolução de Fazendas Sustentáveis</h3>
+            <canvas id="sustainabilityChart" height="100"></canvas>
         </div>
     </main>
+
+    <div class="max-w-screen-xl mx-auto px-6 pb-16 flex justify-between">
+        <a href="tecnologias.html" class="flex items-center gap-x-2 text-emerald-700 font-semibold">← Voltar: Tecnologias</a>
+        <a href="contato.html" class="flex items-center gap-x-2 text-emerald-700 font-semibold">Próxima: Contato →</a>
+    </div>
 
     <script src="script.js"></script>
 </body>

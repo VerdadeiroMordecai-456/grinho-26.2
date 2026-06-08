@@ -7,22 +7,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <nav>...</nav>
+    <nav class="bg-white border-b">...</nav>
 
     <main class="max-w-screen-xl mx-auto px-6 py-16">
-        <h1 class="text-4xl font-bold">Entre em Contato</h1>
-        
-        <!-- Formulário -->
-        <form id="contact-form">
-            <!-- campos -->
-        </form>
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Formulário -->
+            <div>
+                <h2 class="text-3xl font-bold">Fale com nossa equipe</h2>
+                <form id="contact-form" class="mt-8 space-y-5">
+                    <input type="text" id="name" placeholder="Seu nome" required class="w-full">
+                    <input type="email" id="email" placeholder="Seu e-mail" required class="w-full">
+                    <textarea id="message" rows="5" placeholder="Sua mensagem" required class="w-full"></textarea>
+                    <button type="submit" class="btn w-full">Enviar mensagem</button>
+                </form>
+            </div>
 
-        <!-- Quiz -->
-        <div class="mt-16">
-            <h2 class="text-2xl font-bold mb-6">Teste seu conhecimento</h2>
-            <div id="quiz-container"></div>
+            <!-- Quiz -->
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Quiz de Sustentabilidade</h2>
+                <div id="quiz-container" class="bg-white border p-8 rounded-3xl"></div>
+            </div>
         </div>
     </main>
+
+    <div class="max-w-screen-xl mx-auto px-6 pb-16">
+        <a href="impacto.html" class="flex items-center gap-x-2 text-emerald-700 font-semibold">← Voltar: Impacto</a>
+    </div>
 
     <script src="script.js"></script>
 </body>
